@@ -1,0 +1,6 @@
+<li style="max-width: 400px" *ngIf="period">
+  <h2>{{ period.name }}</h2>
+  <p>Temperature: {{ period.temperature }}° {{ period.temperatureUnit }}</p>
+  <img [src]="period.icon" />
+  <p>{{ period.detailedForecast }}</p>
+</li>
